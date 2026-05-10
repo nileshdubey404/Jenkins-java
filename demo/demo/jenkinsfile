@@ -2,11 +2,6 @@ pipeline {
 
     agent any
 
-    tools {
-        maven 'Maven'
-        jdk 'JDK17'
-    }
-
     environment {
 
         APP_NAME = "springboot-demo"
@@ -66,7 +61,7 @@ pipeline {
 
                 sleep 15
 
-                curl http://localhost:8080
+                curl http://localhost:9090
 
                 """
             }
